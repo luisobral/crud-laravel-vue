@@ -11,7 +11,7 @@ git clone https://github.com/luisobral/crud-laravel-vue.git
 Instale as dependência utilizando o Composer dentro do pasta do projeto  
 ```
 cd laravel-vue-crud
-php composer.phar install
+php composer install
 ```
 
 Faça uma cópia do arquivo de configuração  
@@ -24,11 +24,16 @@ Gere uma chave para a sua aplicação
 php artisan key:generate
 ```
 
-Por padrão, nós utilizamos SQLite como base de dados.  
-Caso você deseje continuar utilizando o SQLite, não se esqueça de criar o arquivo em database/database.sqlite  
+Foi utilizado o SQLite, não se esqueça de criar o arquivo em database/database.sqlite  
 ```
 touch database/database.sqlite
 ```
+
+Para a criação das tabelas do banco execute o comando:
+```
+php artisan migrate
+```
+
 
 ## Iniciando a aplicação
 Você pode iniciar a aplicação através do comando:  

@@ -1,0 +1,12 @@
+GET|HEAD        clientes .......................................................................................
+GET|HEAD        empresas .......................................................................................
+GET|HEAD        api/cliente ........................................ cliente.index › ClienteController@index  
+POST            api/cliente ........................................ cliente.store › ClienteController@store  
+    GET|HEAD        api/cliente/{cliente} .......................... cliente.show › ClienteController@show  
+    PUT|PATCH       api/cliente/{cliente} .......................... cliente.update › ClienteController@update  
+    DELETE          api/cliente/{cliente} .......................... cliente.destroy › ClienteController@destroy  
+GET|HEAD        api/empresa ........................................ empresa.index › EmpresaController@index  
+POST            api/empresa ........................................ empresa.store › EmpresaController@store  
+    GET|HEAD        api/empresa/{empresa} .......................... empresa.show › EmpresaController@show  
+    PUT|PATCH       api/empresa/{empresa} .......................... empresa.update › EmpresaController@update  
+    DELETE          api/empresa/{empresa} .......................... empresa.destroy › EmpresaController@destroy
