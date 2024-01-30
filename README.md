@@ -10,8 +10,8 @@ git clone https://github.com/luisobral/crud-laravel-vue.git
 
 Instale as dependência utilizando o Composer dentro do pasta do projeto  
 ```
-cd laravel-vue-crud
-php composer install
+cd -laravel-vue
+composer install
 ```
 
 Faça uma cópia do arquivo de configuração  
@@ -36,14 +36,15 @@ php artisan migrate
 
 
 ## Iniciando a aplicação
+Abrir um novo terminal de comando e digitar o seguinte comando:
+```
+npm install
+npm run dev
+```
+
 Você pode iniciar a aplicação através do comando:  
 ```
 php artisan serve
-```
-
-Após isso abrir um novo terminal de comando e digitar o seguinte comando:
-```
-npm install && npm run dev
 ```
 
 ## Rotas API

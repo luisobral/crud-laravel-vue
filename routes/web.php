@@ -21,6 +21,15 @@ Route::get('/', function () {
 Route::get('/empresas', function () {
     return view('empresa');    
 });
+
+Route::get('/empresas/{id}', function ($id) {
+    return view('empresa-show', ['id'=> $id]);    
+});
+
 Route::get('/clientes', function () {
     return view('clientes');    
+});
+
+Route::get('/clientes/{id}', function ($id) {
+    return view('cliente-show', ['id'=> $id]);    
 });

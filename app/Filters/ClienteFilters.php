@@ -10,11 +10,12 @@ class ClienteFilters extends Filters
      * @var array
      */
     protected $filters = [
-        'recnum', 
-        'codigo', 
+        'recnum',
         'empresa', 
-        'sigla', 
-        'valor_final', 
+        'codigo',
+        'razao_social', 
+        'tipo', 
+        'cpf_cnpj'
     ];
     
     protected function empresa($empresa)

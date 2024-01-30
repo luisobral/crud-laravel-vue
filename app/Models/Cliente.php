@@ -47,6 +47,6 @@ class Cliente extends Model
      */
     public function getPathAttribute()
     {
-        return '/empresa/' . $this->id;
+        return '/clientes/' . $this->id;
     }
 }

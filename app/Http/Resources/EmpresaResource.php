@@ -19,7 +19,8 @@ class EmpresaResource extends JsonResource
             'codigo' => $this->codigo,
             'empresa' => $this->empresa,
             'sigla' => $this->sigla, 
-            'razao_social' => $this->razao_social
+            'razao_social' => $this->razao_social, 
+            'path' => $this->path, 
         ];
     }
 }

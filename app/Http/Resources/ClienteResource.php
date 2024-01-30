@@ -20,7 +20,8 @@ class ClienteResource extends JsonResource
             'codigo' => $this->codigo,
             'razao_social' => $this->razao_social,
             'tipo' => $this->tipo,
-            'cpf_cnpj' => $this->cpf_cnpj
+            'cpf_cnpj' => $this->cpf_cnpj, 
+            'path' => $this->path, 
         ];
     }
 }

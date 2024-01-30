@@ -7,21 +7,19 @@ use App\Filters\EmpresaFilters;
 use App\Http\Resources\EmpresaCollection;
 use App\Http\Requests\StoreEmpresaRequest;
 use App\Http\Requests\UpdateEmpresaRequest;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\View;
 
 class EmpresaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param  \App\Filters\EmpresaFilters
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(EmpresaFilters $filters)
     {
-        $empresas = Empresa::all();
+        $empresas = Empresa::filter($filters)->get();
         return new EmpresaCollection($empresas);
-        // return view('empresa', $empresas);
     }
 
     /**

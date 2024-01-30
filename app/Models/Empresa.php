@@ -45,6 +45,6 @@ class Empresa extends Model
      */
     public function getPathAttribute()
     {
-        return '/empresa/' . $this->id;
+        return '/empresas/' . $this->id;
     }
 }
